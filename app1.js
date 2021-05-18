@@ -1,0 +1,13 @@
+const loginBtn = document.querySelector('#loginbtn')
+const loginPage = document.querySelector('#loginpage')
+const editsection = document.querySelector('#editsection')
+const note = document.querySelector('#note')
+const notename = document.querySelector('#notename')
+const aside = document.querySelector('aside')
+loginBtn.addEventListener('click',function(){
+    loginPage.classList.toggle('flex')
+    aside.classList.toggle('nonedisplay')
+    editsection.classList.toggle('nonedisplay')
+    note.classList.toggle('nonedisplay')
+    notename.classList.toggle('nonedisplay')
+   })

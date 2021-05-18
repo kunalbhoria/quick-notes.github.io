@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Notes box</title>
+</head>
+<body>
+    <header>
+        <div id="left"><h1>Quick Notes</h1></div>
+        <button id="loginbtn">Log in</button>
+        
+    </header>
+    <aside>
+        <button id="deleteall">Delete all notes</button>
+        <div>
+        
+        </div>
+    </aside>
+
+    <div id="note">
+        <h1>Notes</h1>
+    </div>
+
+    <div id="notename" class="notename">
+        <input type="text" id="nameinput" placeholder="rename file">
+        
+            <button  id="namebtn">Rename</button>
+            <button class="navBtn" id="newbtn">New</button>
+            <!-- <img src="/project/shortnotes/plus_PNG59.png" class="navBtn" id="newbtn" alt=""> -->
+            <button class="navBtn" id="savebtn">Save</button>
+            <button class="navBtn" id="deletebtn">Delete</button>
+        
+    </div>
+
+    <section id="editsection">
+        <div id="editbox">
+       
+         <!-- <button id="bold">bold</button> --> 
+         <div>
+             <button title="undo" class="editbtn" onclick="document.execCommand('undo',false,null);"  id="undo">&olarr;</button><hr>
+             <button title="redo" class="editbtn" onclick="document.execCommand('redo',false,null);"  id="redo">&orarr;</button>
+            </div>
+            <div>
+             <button title="bold" class="editbtn" onclick="document.execCommand('bold',false,null);" id="bold" ><b>B</b></button>
+             <button title="italic" class="editbtn" id="italic" onclick="document.execCommand('italic',false,null);"><i>I</i></button>
+             <button title="underline" class="editbtn" onclick="document.execCommand('underline',false,null);"  id="underline"><img src="underline.png" alt=""></button>
+
+         </div>
+         <div>
+             <input title="select color" class="editbtn" type="color" name="" id="color" value="#ffff00"> 
+             <!-- <button class="editbtn" id="hiliter"><img class="btnclickeffect"  src="highlight.png" alt=""></button> -->
+             <button title="marker" class="editbtn"  id="hiliter"><img class="btnclickeffect"  src="highlight.png" alt=""></button>
+        
+         </div>
+         <div id="justify">
+             <button title="justify left" class="editbtn" onclick="document.execCommand('justifyLeft',false,null);"  id="justifyleft"><img src="aligniconleft-65x56.png"  alt=""></button>
+             <button title="justify center" class="editbtn" onclick="document.execCommand('justifyCenter',false,null);"  id="justifycenter"><img src="aligniconcenter-65x56.png" alt=""></button>
+             <button title="justify right" class="editbtn" onclick="document.execCommand('justifyRight',false,null);"  id="justifyright"><img src="aligniconright-65x56.png" alt=""></button>
+             <button title="justify full" class="editbtn" onclick="document.execCommand('justifyFull',false,null);"  id="justifyfull"><img src="aligniconjustify-65x56.png" alt=""></button>
+
+         </div>
+         <div>
+             <button title="superscript text" class="editbtn" onclick="document.execCommand('superscript',false,null);"  id="superscript"><img src="superscript.png" alt=""></button>
+             <button title="subscript text" class="editbtn" onclick="document.execCommand('subscript',false,null);"  id="subscript"><img src="subscript.jpg" alt=""></button>
+         </div>
+         <div>
+             <button title="create Heading" class="editbtn" id="headingbtn">H</button>
+         </div>
+            <!-- <button onclick="document.execCommand('hiliteColor',true,'red');"  id="hilitecolor">highlitecolor</button> -->
+            
+    </div>
+    <!-- <textarea  name="" id="textBox" cols="30" rows="10"></textarea> -->
+    <p contenteditable="true" id="noteBox"></p>
+
+</section>
+
+<section id="loginpage" class="loginpage">
+    <div id="login" class="loginpageitem">
+          <input class="loginbtn" type="text" id="text" placeholder="username">
+          <input class="loginbtn" type="password" name="" id="password" placeholder="password">
+          <button class="loginbtn submitbtn">Log in</button>
+    </div>
+
+<hr>
+
+    <div id="signup"class="loginpageitem">
+
+            <input class="loginbtn" type="text" id="name" placeholder="name">
+            <input class="loginbtn" type="text" id="susername" placeholder="username">
+            <input class="loginbtn" type="password" name="" id="spassword" placeholder="password">
+            <input class="loginbtn" type="password" name="" id="cpassword" placeholder="confirm password">
+            <button class="loginbtn submitbtn" >Sign up</button>
+            
+
+    </div>
+</section>
+
+<script src="app2.js"></script>
+<script src="app1.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,277 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* border: 1px solid whitesmoke; */
+}
+body{
+    display: grid;
+    grid-template-columns: 20vw auto;
+    grid-template-rows: 40px 30px auto;
+    grid-gap: 0px;
+    background-color: rgb(252, 249, 248);
+    border: 1px solid whitesmoke;
+    /* background-image: linear-gradient(to right,rgb(76,14,78),rgb(123,43,7)); */
+    background-image:url(https://source.unsplash.com/1600x900/?nature,sky,water);
+    background-repeat:no-repeat ;
+    background-size:cover ;
+    min-height: 100vh;
+}
+header{
+    grid-column: 1/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    padding:5px 5px 10px 5px ;
+    text-shadow:1px 1px 1px white, -1px -1px 1px white ;
+
+    /* background: #000; */
+}
+
+header button{
+    width: 70px;
+    border-radius: 20px;
+    position:absolute;
+    right: 20px;
+    font-size: 18px;
+    padding: 2px;
+}
+
+h1{
+    /* border: 2px solid black; */
+    background: rgba(255, 255, 255, 0.164);
+}
+#note{
+    border-top-left-radius:20px ;
+    border-bottom-left-radius:20px ;
+    background: rgba(105, 73, 180, 0.5);
+    grid-column: 1/2;
+    grid-row: 2/3;
+    border: 1px solid whitesmoke;
+    text-align: center;
+    padding: 2px;
+    font-size: 11px;
+    color: black;
+    text-shadow: 1px 1px 1px white, -1px -1px 20px white;
+
+}
+
+aside{
+    /* border: 1px solid whitesmoke; */
+    grid-column: 1/2;
+    grid-row: 3/4;
+    padding: 2px;
+
+}
+aside button{
+    width: 90%;
+    display: block;
+    border-radius:20px;
+    margin: 3px auto;
+    border: none;
+    font-size:16px;
+    padding: 2px;
+}
+aside button:hover{
+    font-size: 17px;
+}
+aside button:active{
+    font-size: 16px;
+    background: rgb(139, 118, 231);
+    color: white;
+}
+aside h4{
+    border-top-left-radius:10px ;
+    border: 2px solid grey;
+    padding: 1px 10px;
+    margin: 2px auto;
+    width: 90%;
+    color: blue;
+    background-color:rgb(159, 185, 185);
+}
+h4:hover{
+    color:black;
+    background-color: gainsboro;
+}
+.selected{
+    color:white;
+    background-color: black;
+}
+
+.notename{
+    background: rgba(105, 73, 180, 0.644);
+    border: 1px solid whitesmoke;
+    border-top-right-radius:20px ;
+    border-bottom-right-radius:20px ;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: space-around;
+    padding: 2px 10px;
+    /* border: 2px solid blue; */
+}
+#notename input{
+    width: 20vw;
+    text-align: center;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+/* #newbtn{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 100px;
+} */
+#notename button{
+    min-width: 10%;
+    border-radius: 10px;
+}
+#notename button:hover{
+    background: rgba(0, 0, 0,0.5);
+    color: white;
+}
+#notename button:active{
+    background: rgba(47, 5, 71, 0.5);
+    color: white;
+}
+section{
+    grid-column:2/3;
+    grid-row: 3/4;
+    border: 1px solid whitesmoke;
+    border-top: none;
+    min-height: 88vh;
+
+}
+#editbox{
+    width: 50%;
+    height: 5vh;
+    margin: 0px auto;
+    border-bottom-right-radius:20px;
+    border-bottom-left-radius:20px;
+    display: flex;
+    justify-content: space-evenly;
+    background: white;
+}
+
+#editbox div{
+    border: none;
+    display: flex;
+}
+.editbtn{
+    overflow: hidden;
+    width: 30px;
+    padding: 1px;
+    font-size: 25px;
+    /* box-sizing: border-box; */
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+.editbtn img{
+    width: 18px;
+}
+#justify button img{
+    width: 25px;
+}
+hr{
+    color: black;
+
+    background: #000;
+}
+#textBox{
+    display: none;
+    padding: 10px;
+    width: 100%;
+    max-height: 40vh;
+    background-color: rgb(183, 240, 183);
+    font-size: 30px;
+    color: red;
+}
+p{
+    font-size: 25px;
+    color: rgb(14, 62, 207);
+    color:black;
+    padding: 10px;
+    /* margin: 1px 5px; */
+    background-color: rgba(216, 191, 216,0.5);
+    min-height:85vh;
+    /* border: 3px solid blue; */
+    max-width: 79vw;
+}
+[contenteditable] {
+    outline: 0px solid transparent;
+  }
+ #noteBox > div {
+   border: none;
+
+ }
+
+
+ .loginpage{
+     grid-row: 2/4;
+     grid-column: 1/3;
+     /* background:white; */
+     display: flex;
+     justify-content: space-between;
+     display: none;
+     /* border-top: 1px solid whitesmoke; */
+     /* border-top: 1px solid whitesmoke; */
+     
+     
+ }
+
+.loginpageitem{
+    width: 40%;
+  
+    height: 60%;
+    padding:5%;
+    
+    margin: 9%;
+    
+    /* border-top-left-radius: 15%;
+    border-bottom-right-radius: 15%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.521);
+    /* background: rgba(0, 0, 0, 0.2); */
+} 
+
+#loginpage hr{
+height: 70%;
+margin: auto;
+}
+
+#login{
+ display: flex;
+ flex-direction: column;
+ border-top-left-radius: 15%;
+ border-bottom-right-radius: 15%;
+}
+#signup{
+    border-top-right-radius: 15%;
+    border-bottom-left-radius: 15%;
+}
+.loginbtn{
+    margin: 10px;
+    height: 25px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 90%;
+}
+.submitbtn{
+    width: 30%;
+}
+.flex{
+    display: flex;
+}
+.nonedisplay{
+    display: none;
+}
